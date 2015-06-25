@@ -1,5 +1,4 @@
 name: Silk DI
-markdown: rdiscount
-pygments: true
+highlighter: pygments
 
 keep_files: [ "./assets" ]
