@@ -5,7 +5,7 @@
 body { width: 40em; margin: 0 auto; font-family: Lora; }
 h1 { font-family: Vidaloka, serif; font-weight: 400; font-size: 4em; margin-bottom: 0; line-height: 1em; }
 h1 + p { margin-top: 0; }
-h3 { font-family: Vidaloka, serif; font-size: 1.75em; }
+h2 { font-family: Vidaloka, serif; font-size: 1.75em; margin-top: 3em; }
 h4 { font-family: Vidaloka, serif; font-size: 1.125em; margin-bottom: 0; }
 
 footer { font-size: 80%; text-align: right; margin: 1em 0; display: block; }

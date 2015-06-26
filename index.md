@@ -6,13 +6,13 @@ layout: default
 
 _java dependency injection through code_
 
-### What happened?
+## What happened?
 
 As always the detailed documentation provided earlier got outdated when the code
 evolved. The following is not much but it will be accurate at least. 
 If something is not covered just ask [me](http://jbee.github.io).
 
-### What it is
+## What it is
 Dependency management through code. 
 No XML. No Annotations. No code dependencies in the wrong direction. 
 Application code is written as if there is no DI library. 
@@ -21,7 +21,7 @@ sophisticated library is needed to aid it.
 Silk will make sophisticated wiring easier until it is no longer needed and
 gracefully disappears as simplicity emerges.
 
-### Why it came to be
+## Why it came to be
 The classic struggle: How hard could it be to write something better than 
 the so called "mature" crap mostly used in the enterprise? 
 As often it turned out: not that complicated.
@@ -30,7 +30,14 @@ library is intended as a substitute that in the end gets rid of itself.
 Confused? It's just saying: [Small is beautiful](http://www.infoq.com/presentations/small-large-systems).
 We don't need a library for that. So I'm not using it.
 
-### How it is used
+## Why use it?
+If you have already decided to use a container you're most likely better off 
+with silk. It's tiny, debuggable, straight forward stand alone library that 
+makes common things easy and uncommon ones easy to add.
+However, it makes some strong decisions to keep dependency injection sane.
+Don't fight them. Ask why. Learn.
+
+## How to use it
 * Checkout the [sources](https://github.com/jbee/silk) or pick a 
 [release](https://github.com/jbee/silk/releases),
 * use `ant jar` or `ant release` to build a jar and add it to the classpath,
@@ -58,7 +65,7 @@ Injector injector = Bootstrap.injector( RobotLegsProblem.class );
 Robot robot = injector.resolve( dependency( Robot.class ) ); 
 {%endhighlight%}
 
-### How to learn it
+## How to learn it
 The [tests](https://github.com/jbee/silk/tree/master/src/test/se/jbee/inject/bind)
 for the binding API do illustrate what can be done and how to do it. 
 It's all ordinary code. Read it.
@@ -87,7 +94,7 @@ Looking at the other tests in the same folder will also be useful.
 There is more to discover. Most likely silk allows to do what you want.
 Otherwise just ask [me](http://jbee.github.io) for help.
 
-### How it works
+## How it works
 At the core is a quite simple instance container. 
 It consists of a list of injectrons sorted by precision (most precise first) 
 that is assembled from bindings during initialization and then never changes again.
