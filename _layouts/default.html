@@ -7,36 +7,23 @@
     <meta name="description" content="Home page of Silk DI - the Java dependency injection / inversion of control IoC framework in pure immutable code.">    
     <meta name="google-site-verification" content="RUSGBDySczIqgJhW3IYYfECMvXskBRw8R3g-C6N_f1I" />    
     <title>{% if page.title %} {{ page.title }} - {% endif %} Silk DI</title>
+
+    <link rel="stylesheet" href="/silkdi.css">
+    <link rel="stylesheet" href="/assets/css/pygment_trac.css">
+<!--
     <link rel="shortcut icon" href="http://jbee.github.com/silk/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/assets/css/silk.css">
     <link rel="stylesheet" href="/assets/css/compare.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="/assets/css/pygment_trac.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<!--
     <script type="text/javascript" src="/assets/js/autolink.js"></script>
 -->
   </head>
   <body>
-   	<header>
-	 	<div class="wrapper">
-			<h1><a href="/" style="text-decoration: none;"><i>silk &nbsp; <small>Java Dependency Injection</small></i></a></h1>
-		 	<nav>
-	  		<a href="/userguide/" class="book c-docs"><span class="fa fa-cogs"> </span> Docs</a>
-	  		<a href="/downloads/" class="book c-downloads"><span class="fa fa-download"> </span> Download</a>
-			  <a href="/javadoc/" class="book c-javadocs"><span class="fa fa-coffee"> </span> Javadoc</a>	  		
-	  		<a href="/help/" class="book c-help"><span class="fa fa-plus-circle"> </span> Help</a>
-	  		<!--<a href="/help/license.html" class="book c-license"><span class="icon-info-sign"> </span> License</a>-->
- 			</nav>
-		</header>
-    <section class="wrapper">{{ content }}</section>
-    <div class="wrapper">
-	  <footer class="clearfix">
-		        <p>This project is maintained by <a href="https://github.com/jbee">jbee</a>, Hosted on GitHub Pages<br/>
-This site uses the wonderful free font <a href="http://www.cyreal.org/2012/07/lora/">Lora</a> designed by <a href="http://www.cyreal.org/">Cyreal</a>.
-</p>
-	  </footer>
-    </div>
+	{{ content }}
+
+<footer>
+&copy; 2015 <a href="http://jbee.github.io/">Jan Bernitt</a><br> 
+fonts <a href="http://www.fontsquirrel.com/fonts/vidaloka">Vidaloka</a> &amp; <a href="http://www.cyreal.org/2012/07/lora/">Lora</a> by <a href="http://www.cyreal.org/">Cyreal</a>
+</footer>
   </body>
 </html>
