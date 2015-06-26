@@ -100,7 +100,9 @@ It consists of a list of injectrons sorted by precision (most precise first)
 that is assembled from bindings during initialization and then never changes again.
 Each injectron is a factory like typed source of instances. When a dependency is resolved
 the first injectorn that matches the requested dependency is asked to yield
-the instance for it. That's it. 
+the instance for it. If the requested type is a 1-dimensional array and no
+injectorn specifically for that type exists, the resulting array is assembled
+from all matching element instance providers. That's it.
 
 #### Utilities
 Most of the library is just a utility build around the container.
