@@ -107,10 +107,11 @@ convenient. Finally actions utilize several features to build a
 input-processing-output abstraction onto methods.
 
 #### Precision?
-Both instance providers (injectrons) as well as dependencies (instance requirements)
-do described through data what they require/provide. 
+Both dependencies (instance requirements) as well as injectrons (instance providers)
+are (also) data descriptions of what they require/provide.
 Such descriptions can be more or less specific or precise.
-A wild-card type is less precise than a fully specified one. 
+A wild-card type is less precise than a fully specified one.
+A sub-class more specific than a super-class.
 A named instance more precise than a unnamed one, 
 one specifically meant for a particular package or parent instance is again more 
 precise than one that doesn't specify these. 
